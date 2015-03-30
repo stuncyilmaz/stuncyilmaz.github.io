@@ -6,6 +6,8 @@ MSAN 622 Information Visualization
 |-----------:|:-----------------------|
 | **Email:** | <styilmaz@usfca.edu> |
 | **LinkedIn:** | <https://www.linkedin.com/in/styilmaz> |
+|**Website:** | <http://stuncyilmaz.github.io/data_visualizations/> |
+
 
 ## About Me ##
 

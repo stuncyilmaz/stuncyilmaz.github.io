@@ -1,12 +1,14 @@
 
-MSAN 622 Information Visualization
+Selman's personal homepage
 ==================================
 
-|  **Name:** | Sophie Engle           |
+|  **Name:** | Selman Tunc Yilmaz           |
 |-----------:|:-----------------------|
-| **Email:** | <sjengle@cs.usfca.edu> |
-|   **Web:** | <http://msan622.github.io/spring-2015-msan622> |
+| **Email:** | <styilmaz@usfca.edu> |
+| **LinkedIn:** | <https://www.linkedin.com/in/styilmaz> |
+|**Website:** | <http://stuncyilmaz.github.io> |
+
 
 ## About Me ##
 
-I am a professor at the [University of San Francisco](http://www.usfca.edu/). I am the graduate director for the Masters of Science in Computer Science program, and teach courses for the Department of Computer Science and Masters of Science in Analytics program. I have a stubborn yet adorable corgi named Casablanca (after the movie).
+I am enrolled in MS in [Analytics program at USF](http://www.usfca.edu/artsci/msan/). After 8+ years of academic research in Physics, I followed my new passion and dedicated the last year to gain hands-on experience in modern data science tools. In this website you will find my journey in data science.
