@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Motivation</title>
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #data td, #stats td {
+            text-align: right;
+            width: 12.5%;
+        }
+
+        th {
+            text-align: right;
+        }
+
+        #plots td {
+            text-align: center;
+        }
+
+        .axis text {
+            fill: #bbbbbb;
+            font-size: 8pt;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #bbbbbb;
+            shape-rendering: crispEdges;
+        }
+
+        svg {
+            border: 1px solid black;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container">
+
+<h1 class="page-header">
+    Anscombe's Quartet
+    <small>An Argument from Statistics, 1973</small>
+</h1>
+
+<blockquote>
+<p>A computer should make both calculations and graphs. Both sorts of output should be studied; each will contribute to understanding.</p>
+<footer><cite>Francis Anscombe, 1973</cite> (<a href="http://eagereyes.org/criticism/anscombes-quartet
+">source</a>)</footer>
+</blockquote>
+
+<h2>Data</h2>
+
+<p><a class="btn btn-primary" data-toggle="collapse" href="#data-panel" aria-expanded="true">Toggle Table</a></p>
+
+<div class="collapse in" id="data-panel">
+<table id="data" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th colspan="2">Group 1</th>
+            <th colspan="2">Group 2</th>
+            <th colspan="2">Group 3</th>
+            <th colspan="2">Group 4</th>
+        </tr>
+        <tr>
+            <th>x</th><th>y</th>
+            <th>x</th><th>y</th>
+            <th>x</th><th>y</th>
+            <th>x</th><th>y</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    <!-- filled in by script -->
+    </tbody>
+</table>
+<footer>(<a href="http://en.wikipedia.org/wiki/Anscombe's_quartet">source</a>)</footer>
+</div>
+
+<h2>Stats</h2>
+
+<p><a class="btn btn-primary" data-toggle="collapse" href="#stats-panel" aria-expanded="false">Toggle Table</a></p>
+
+<div class="collapse" id="stats-panel">
+<table id="stats" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Statistic</th>
+            <th>Group 1</th>
+            <th>Group 2</th>
+            <th>Group 3</th>
+            <th>Group 4</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>mean(x)</td>
+            <td>9.00</td>
+            <td>9.00</td>
+            <td>9.00</td>
+            <td>9.00</td>
+        </tr>
+
+        <tr>
+            <td>mean(y)</td>
+            <td>7.50</td>
+            <td>7.50</td>
+            <td>7.50</td>
+            <td>7.50</td>
+        </tr>
+
+        <tr>
+            <td>var(x)</td>
+            <td>11.00</td>
+            <td>11.00</td>
+            <td>11.00</td>
+            <td>11.00</td>
+        </tr>
+
+        <tr>
+            <td>var(y)</td>
+            <td>4.13</td>
+            <td>4.13</td>
+            <td>4.12</td>
+            <td>4.12</td>
+        </tr>
+
+        <tr>
+            <td>correlation</td>
+            <td>0.82</td>
+            <td>0.82</td>
+            <td>0.82</td>
+            <td>0.82</td>
+        </tr>
+
+        <tr>
+            <td>linear regression</td>
+            <td>y = 0.5x + 3</td>
+            <td>y = 0.5x + 3</td>
+            <td>y = 0.5x + 3</td>
+            <td>y = 0.5x + 3</td>
+        </tr>
+    </tbody>
+</table>
+<footer>(<a href="http://en.wikipedia.org/wiki/Anscombe's_quartet">source</a>)</footer>
+</div>
+
+<h2>Plots</h2>
+
+<table id="plots" class="table table-bordered">
+    <tr>
+        <td><svg id="plot1"></svg></td>
+        <td><svg id="plot2"></svg></td>
+    </tr>
+
+    <tr>
+        <td><svg id="plot3"></svg></td>
+        <td><svg id="plot4"></svg></td>
+    </tr>
+</table>
+
+<h2>Notes</h2>
+
+<ul>
+<li><p>Simple, contrived, but effective example.</p></li>
+<li><p>Need to analyze <strong>and</strong> visualize your data.</p></li>
+<li><p>Simple visualizations are often enough to reveal structure.</p></li>
+</ul>
+
+<script>
+// Anscombe's Quartet
+var group1 = [
+    {"x": 10.00, "y":  8.04},
+    {"x":  9.00, "y":  6.95},
+    {"x": 13.00, "y":  7.58},
+    {"x":  9.00, "y":  8.81},
+    {"x": 11.00, "y":  8.33},
+    {"x": 14.00, "y":  9.96},
+    {"x":  6.00, "y":  7.24},
+    {"x":  4.00, "y":  4.26},
+    {"x": 12.00, "y": 10.84},
+    {"x":  7.00, "y":  4.82},
+    {"x":  5.00, "y":  5.68}
+];
+
+var group2 = [
+    {"x": 10.00, "y":  9.14},
+    {"x":  8.00, "y":  8.14},
+    {"x": 13.00, "y":  8.74},
+    {"x":  9.00, "y":  8.77},
+    {"x": 11.00, "y":  9.26},
+    {"x": 14.00, "y":  8.10},
+    {"x":  6.00, "y":  6.13},
+    {"x":  4.00, "y":  3.10},
+    {"x": 12.00, "y":  9.13},
+    {"x":  7.00, "y":  7.26},
+    {"x":  5.00, "y":  4.74}
+];
+
+var group3 = [
+    {"x": 10.00, "y":  7.46},
+    {"x":  8.00, "y":  6.77},
+    {"x": 13.00, "y": 12.74},
+    {"x":  9.00, "y":  7.11},
+    {"x": 11.00, "y":  7.81},
+    {"x": 14.00, "y":  8.84},
+    {"x":  6.00, "y":  6.08},
+    {"x":  4.00, "y":  5.39},
+    {"x": 12.00, "y":  8.15},
+    {"x":  7.00, "y":  6.42},
+    {"x":  5.00, "y":  5.73}
+];
+
+var group4 = [
+    {"x":  8.00, "y":  6.56},
+    {"x":  8.00, "y":  5.76},
+    {"x":  8.00, "y":  7.71},
+    {"x":  8.00, "y":  8.84},
+    {"x":  8.00, "y":  8.47},
+    {"x":  8.00, "y":  7.04},
+    {"x":  8.00, "y":  5.25},
+    {"x": 19.00, "y": 12.50},
+    {"x":  8.00, "y":  5.56},
+    {"x":  8.00, "y":  7.91},
+    {"x":  8.00, "y":  6.89}
+];
+
+/*
+ * Discussion:
+ * Above are arrays of objects. Objects are similar to dictionaries in Python.
+ * You can access values by key either as object.key or object["key"].
+ */
+
+// :>> group1
+// :>> group1.length
+// :>> group1[0]
+// :>> group1[0].x
+// :>> group1[0]["x"]
+// :>> Object.keys(group1[0])
+
+var anscombe = [group1, group2, group3, group4];
+
+/*
+ * Discussion:
+ * We can also create an array of arrays of objects.
+ */
+
+// :>> anscombe
+
+var numCols = anscombe.length;
+var numRows = group1.length;
+
+// Populate Data Table
+
+/*
+ * Discussion:
+ * Next, lets try to populate the data table. We are not limited to SVGs when
+ * it comes to D3. We can use it to manipulate the page as well.
+ */
+
+// :>> d3.select("table#data")
+// :>> d3.select("table#data").node()
+
+var table = d3.select("table#data");
+var tbody = table.select("tbody");
+
+/*
+ * Discussion:
+ * Lets put our data into our table by row.
+ */
+
+for (var i = 0; i < numRows; i++) {
+    var row = tbody.append("tr");
+
+    // All use of row will operate on that "tr" element
+    for (var j = 0; j < numCols; j++) {
+        // The text call operates on the "td" element
+        // You can use .toFixed(), which is built-in to JavaScript
+        // D3 also has a nice number formatter
+        row.append("td").text((anscombe[j][i].x).toFixed(2));
+        row.append("td").text((anscombe[j][i].y).toFixed(2));
+    }
+}
+
+/*
+ * Discussion:
+ * After looking at the statistics, lets try to visualize this data.
+ * We will do the same thing for each dataset, so lets use a function.
+ */
+
+for (var i = 0; i < numRows; i++) {
+    var svg = d3.select("body").select("svg#plot" + (i + 1));
+    var data = anscombe[i];
+
+    scatterplot(svg, data);
+}
+
+// Source Inspiration:
+// http://bl.ocks.org/mbostock/3887118
+function scatterplot(svg, data) {
+    // Adjust margin to accommodate labels
+    var margin = {top: 20, right: 20, bottom: 30, left: 30};
+
+    // Subtract margin from width and height
+    var width  = 300 - margin.left - margin.right;
+    var height = 300 - margin.top  - margin.bottom;
+
+    // Encode data by position
+    // Used to transform (x, y) values to (x, y) pixels
+    var x = d3.scale.linear()
+        .domain([0, 20])        // x data values
+        .range([0, width])      // x pixel values
+
+    var y = d3.scale.linear()
+        .domain([0, 20])        // y data values
+        .range([height, 0]);    // y pixel values
+
+    // D3 has build-in axis generators
+    var xaxis = d3.svg.axis()
+        .scale(x)
+        .ticks(5)
+        .orient("bottom");      // controls orientation of labels
+
+    var yaxis = d3.svg.axis()
+        .scale(y)
+        .ticks(5)
+        .orient("left");
+
+    // Set the attributes of the SVG. Notice now it has a width and height!
+    svg.attr("width",  width  + margin.left + margin.right);
+    svg.attr("height", height + margin.top  + margin.bottom);
+
+    // You almost always create a plot area within the SVG
+    var plot = svg.append("g");
+    plot.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Add x-axis using axis generator. Style controlled by class.
+    plot.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xaxis);
+
+    // Add y-axis.
+    plot.append("g")
+        .attr("class", "y axis")
+        .call(yaxis);
+
+    // Bind data to objects.
+    // This is why this is called D3 (data-driven documents)!
+    var dots = plot.selectAll("circle")  // initially an empty selection
+        .data(data)                      // binds data to objects
+        .enter();                        // all previously unbound data
+
+    /*
+    Think of this as a set operations. Before the enter(), we are
+    operating on existing data (the update selection). After the
+    enter, we are operating on the NEW data that was not already bound
+    to the previous selection (the enter selection). If you add an
+    exit after that, you are operating on the OLD data that is no
+    longer represented. (Draw Venn diagram.)
+    */
+
+    // Appends a circle for each previously unbound data point.
+    dots = dots.append("circle");
+
+    // Sets the attributes of that circle.
+    dots.attr("r", 5);
+    dots.attr("cx", function(d) { return x(d.x); });
+    dots.attr("cy", function(d) { return y(d.y); });
+
+    // Sets the style of that circle.
+    dots.style("fill", "#2078B4");
+    dots.style("stroke", "white");
+    dots.style("stroke-width", 1);
+
+    /*
+     * Discussion
+     * Now we can also add the regression line. But, we do not want it in
+     * front of the dots. So we need to insert it behind everything else.
+     */
+
+    // Linear regression line for all plots
+    function regressionLine(x) {
+        return y(0.5 * x + 3);
+    }
+
+    plot.insert("line", ":first-child")
+        .attr("x1", x(0))
+        .attr("y1", regressionLine(0))
+        .attr("x2", x(20))
+        .attr("y2", regressionLine(20))
+        .style("stroke", "#888888")             // set style here or in css
+        .style("stroke-dasharray", "2, 2");
+}
+
+</script>
+
+
+</div> <!-- /container -->
+</body>
+</html>
