@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Selman's Page</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+<style type="text/css">
+    ul.a {
+        list-style-position: outside;
+    }
+    .table-borderless th { border: 0; }
+    .mycolor {
+        background: rgba(212,210,210,1)
+    }
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="http://stuncyilmaz.github.io/visualisation_projects/" target="_blank">Data Visualizations Page</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>explorations in data science</h1>
+
+        <p><a class="btn btn-primary btn-lg" href="#Projects" role="button">Projects &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="page-header"><a name="About"></a>About</h2>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/profile.JPG" style="width: 150px; height: 150px;">
+                    </a>
+                </div>
+                <div class="media-body">
+                
+                    <div ><p>I am currently on the job market for a position as data scientist.
+
+                            After moving to the Bay Area as a postdoctoral researcher in Physics, my interest was sparked by the developments in Data Science and related technologies. I dedicated the last year to transitioning from academia, and gained hands-on experience in relevant data science tools currently used in the industry. Nine years of experience in cutting-edge scientific research provides me an ideal foundation to turn data into practical solutions.</p>
+
+                            <p>Specialties: Python, R, PostgreSQL, machine learning, statistics, AWS, research development.</p>
+
+                            <p>
+                                <dl >
+                                    <dt>CAREER SUMMARY</dt>
+
+                                    <dd>Analytics Intern, Autogrid, 2014 - present</dd>
+
+                                    <dd>Postdoctoral Fellow, Physics Department, University of California Berkeley, 2011-2014</dd>
+
+                                    <dd>PhD Student, Physics, ETH Zurich, 2007 - 2011</dd>
+
+                                </dl>
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+ 
+
+        <div class="col-md-4">
+            <h2 class="page-header"><a name="contact"></a>Contact</h2>
+
+            <table class="table table-bordered" style="width: auto;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Selman Tunc Yilmaz</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>Email:</th>
+                        <td><a href="mailto:styilmaz@usfca.edu">styilmaz@usfca.edu</a></td>
+                    </tr>
+
+                    <tr>
+                        <th>Linkedin:</th>
+                        <td><a href="https://www.linkedin.com/in/styilmaz" target="_blank">linkedin.com/in/styilmaz</a></td>
+                    </tr>
+                    <tr>
+                        <th>Github:</th>
+                        <td><a href="https://github.com/stuncyilmaz" target="_blank">github.com/stuncyilmaz</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="page-header"><a name="Projects"></a>Projects</h2>
+            <div >
+                <p>Here is a sample of programming related projects that I have been working on this year.</p>
+            </div>
+            <ul>
+                <li>
+                    <strong><a style="color: #000000;" href="http://stuncyilmaz.github.io/visualisation_projects/">Visualizations with D3</a> </strong>
+                    <p> Currently I am taking a course at USF on data visualization with D3 and javascripts. I will post my finished projects on my <strong><a style="color: #000000;" href="http://stuncyilmaz.github.io/visualisation_projects/">GitHub page</a> </strong>.</p>
+                </li>
+                <li>
+                    <strong><a style="color: #000000;" href="/restaurants_project" target="_blank">SF Restaurants</a> </strong>
+                    <p>A Shiny application to visualize the operating hours of a random sample of restaurants in San Francisco for each day of the week. The interactive map gives an idea for which SF neighborhoods are awake and alive at a certain time. The source codes for scraping Yelp pages to create a database of the opening-closing times of the SF restaurants, as well as the code for the Shiny application are available <a style="color: #000000;" href="https://github.com/stuncyilmaz/Data_Acquisition_Using_Web" target="_blank"><strong>here</strong>.</a></p>
+
+                </li>
+                <li>
+                    <strong><a style="color: #000000;" href="https://github.com/stuncyilmaz/Sentiment-Analysis-with-Random-Forests" target="_blank">Sentiment Analysis with Random Forests</a> </strong>
+
+                    <p>An implementation of sentiment analysis using random forests. I worked with the Rotten Tomatoes data set from the <a style="color: #000000;" href="https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews" target="_blank"> Kaggle competition.</a> The data contains 156000 short movie reviews, labeled with ratings 1-5.</p>
+                </li>
+                <li>
+                    <strong><a style="color: #000000;" href="https://github.com/stuncyilmaz/R-stepwise-variable-elimination" target="_blank"> R stepwise backward regression</a> </strong>
+                    <p>In R, I could not find a stepwise backward regression function that can test all the 2-way interactions between the variables. Here is my program that does it.
+                    The program takes as input an R data frame, and outputs a linear regression model with minimum Akaike information criterion (AIC). The first column in the data frame is used as the response variable.
+                    The program starts with all the variables in the data frame, and their 2-way interactions. At each step, a term in the model is removed that contributes most to the reduction of AIC. If at a step a single variable V1 is removed, all the interaction terms that have V1 (such as V1xV2 , V1xV3, …, V1xVn) are removed as well. Variable elimination continues until stepwise elimination cannot reduce AIC.
+                    “test.r” provides example for how to use the function with “SENIC” data set.</p>
+                </li>
+            </ul>
+   
+    </div>
+</div>
+</div>
+
+
+
+<div class="container">
+
+    <h2 class="page-header"><a name="Resume"></a>Resume</h2>
+
+
+    <div class="row well">
+
+        <div class="col-md-6 ">
+        <h2 class="page-header">Education</h2>
+
+            <dd>
+                <div class="row">
+                    <div class="col-xs-3"><a href="http://www.usfca.edu/artsci/msan/" target="_blank">MS in Analytics </a>  </div>
+                    <div class="col-xs-5">University of San Francisco</div>
+                    <div class="col-xs-4">07/2015 (expected)</div>
+                </div>
+            </dd>
+
+            <dd>
+                <div class="row">
+                    <div class="col-xs-3"> <a href="http://www.quantumphotonics.ethz.ch/" target="_blank">PhD in Physics </a>  </div>
+                    <div class="col-xs-5">ETH Zurich, Switzerland</div>
+                    <div class="col-xs-4">10/2007 - 07/2011</div>
+                </div>
+            </dd>
+
+            <dd>
+                <div class="row">
+                    <div class="col-xs-3">MS Physics</div>
+                    <div class="col-xs-5">ETH Zurich, Switzerland</div>
+                    <div class="col-xs-4">10/2006 - 10/2007</div>
+                </div>
+            </dd>
+            <dd>
+                <div class="row">
+                    <div class="col-xs-3">BSc <br>Materials Science</div>
+                    <div class="col-xs-5">Sabancı University</div>
+                    <div class="col-xs-4">09/2002 - 07/2006</div>
+                </div>
+            </dd>
+
+        </div>
+        <div class="col-md-6 ">
+            <h2 class="page-header">Skills</h2>
+            <p>Python, R, Statistics, MySQL, Postgres, MongoDB, SAS, Bash, Matlab, Machine Learning, Web Scraping.<br> Hands-on experience with AWS, Spark, Hadoop, Java.</p>
+            <p>Languages: English, German, Turkish (all fluent, spoken and written).</p>
+
+        </div>
+
+    </div>
+
+    <div class="row well">
+        <div class="col-md-9 ">
+        <h2 class="page-header">Employment</h2>
+
+            <div class="row" >
+                <div class="col-xs-3"><a href="http://www.auto-grid.com/" target="_blank"><strong>Autogrid Systems</strong></a></div>
+                <div class="col-xs-3">Redwood Shores, CA </div>
+                <div class="col-xs-3">11/2014 - present </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-3">Data Science Intern</div>
+            </div>
+
+
+            <br>
+            <ul>
+                <li>Implemented time series analysis for electric load forecasting using Neural Networks, Generalized Linear Models, SARIMA and Holt Winters models.</li>
+            </ul>
+            <br>
+            <div class="row" >
+                <div class="col-xs-3"><a href="http://research.physics.berkeley.edu/yildiz/index.html" target="_blank"><strong>University of California Berkeley</strong></a> </div>
+                <div class="col-xs-3">Berkeley, CA </div>
+                <div class="col-xs-3">11/2011 - 04/2014 </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">Postdoctoral Researcher </div>
+            </div>
+            <br>
+            <ul>
+                <li>Identified fluorescent signals in noisy images by developing image processing methods using IDL and Matlab.</li>
+                <li>Modified step-finding algorithms for own experimental time-series data using Matlab.</li>
+                <li>Quantified experimental results by creating a probabilistic model of experimental conditions.</li>
+            </ul>
+
+            <br>
+            <div class="row" >
+                <div class="col-xs-3"><strong>ETH Zurich</strong></div>iv>
+                <div class="col-xs-3">Switzerland </div>
+                <div class="col-xs-3">10/2007 - 07/2011 </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-3">Research and Teaching Assistant</div>
+            </div>
+            <br>
+            <ul>
+                <li>Simulated quantum mechanical phenomena in Matlab to support experimental results.</li>
+                <li>Automated experiments by writing large scale LabView and Matlab programs for device control and data acquisition.</li>
+                <li>Developed physical models of nano-structures by designing and running experiments and analysing experimental data.</li>
+                <li>Lectured, prepared and graded exams and assignments for graduate and undergraduate level Physics classes.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <div class="row well">
+        <div class="col-md-9 ">
+        <h2 class="page-header">Selected Coursework</h2>
+
+            <div class="row" >
+                <div class="col-xs-3"><strong>University of San Francisco</strong></div>
+                <div class="col-xs-3">San Francisco, CA </div>
+                <div class="col-xs-3">07/2014 - present </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-3">MS in Analytics</div>
+            </div>
+
+            <br>
+            <ul>
+                <li>Performed sentiment analysis classification on movie reviews using Random Forests, Logistic Regression and Naive Bayes algorithms, and Neural Networks for feature engineering. (top 10% on Kaggle's board)</li>
+                <li>Webscraped Yelp and Eventful websites to create animated maps with Shiny and ggplot2 packages in R that indicate restaurants and nearby social events.</li>
+                <li>Implemented a RESTful service using Python Flask and MongoDB.</li>
+                <li>Created a search engine by implementing TF-IDF weighting scheme on 80,000 XML documents using Python.</li>
+            </ul>
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="row well">
+        <div class="col-md-9 ">
+        <h2 class="page-header">Publications</h2>
+            <dl>
+                <dt>Books</dt>
+                <li>S.T. Yilmaz. Exploring Single Spin Physics in Self-Assembled Quantum Dots. SVH-Verlag (2011).</li>
+            </dl>
+            <br>
+            <dl>
+                <dt>Papers</dt>
+                <li>P. Fallahi, S.T. Yilmaz, A. Imamoglu. Observation of heavy-hole hyperfine interac tion in quantum dots. Phys. Rev. Lett., 105, 257402 (2010).</li>
+                <li>S.T. Yilmaz, P. Fallahi, A. Imamoglu. Quantum-dot-spin single photon interface. Phys. Rev. Lett., 105, 033601 (2010).</li>
+                <li>N. Vamivakas, M. Atature, J. Dreiser, S.T. Yilmaz, A. Badolato, A.K. Swan, B.B. Goldberg, A. Imamoglu, M.S. Unlu. Strong extinction of a far-field laser beam by a single quantum dot. Nano Lett., 7 (9), 2892 (2007).</li>
+                <li>S.T. Yilmaz, U. D. Ozugurel, K. Bulut, M. N. Inci. Vibration amplitude analysis with a single frame using a structured light pattern of a four-core optical fibre. Optics Communications, 249, 515 (2005).</li>
+            </dl>
+            <br>
+            <dl>
+                <dt>Peer-Reviewed Conference Talks </dt>
+                <li>Electron-spin single-photon interface in a quantum dot. Frontiers in Optics (2010), Rochester, NY, USA.</li>
+                <li>Time-resolved electron spin measurement in a quantum dot. Marie Curie EMALI Conference (2010), Barcelona, Spain.</li>
+            </dl>
+            <br>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer>
+    <p style="text-align: center;">Selman Tunc Yilmaz &bullet; Personal Website &bullet; Spring 2015</p>
+</footer>
+
+</div><!--/.container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+
+<!-- STUDENTS: Remove this after verifying D3 is working. //-->
+<script src="js/testD3.js"></script>
+<script>testD3("demo");</script>
+</body>
+</html>
