@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.bar {
+  fill: steelblue;
+}
+
+.bar.vowel {
+  fill: brown;
+}
+
+.bar:hover {
+  fill: yellow;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #984ea3;
+  stroke-width: 2px;
+  font-size: 16px;
+}
+
+.y.axis text {
+    font-family: sans-serif;
+    font-size: 12px
+}
+
+.x.axis text {
+    font-family: sans-serif;
+    font-size: 22px;
+
+}
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+</style>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MSAN 622 Information Visualization</title>
+
+<link href="/data_visualizations/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/data_visualizations/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<style type="text/css">
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+</style>
+
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-offset-2">
+          <div id= 'current_word'> <p></p> </div>
+          <div class="input-group">
+              <input type="text" id= 'input1' class="form-control" placeholder="type words..." >
+              <span class="input-group-btn">
+                <button class="btn btn-default" onclick="myFunction()" type="button">Go!</button>
+              </span>
+          </div><!-- /input-group -->
+      </div>
+    </div><!-- /.row -->
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-lg-8 col-sm-offset-2" id="svg_holder" >
+      <svg id="demo" width=860 height=400 ></svg>
+    </div>
+  </div>
+
+
+
+<script src="/data_visualizations/Homework1/js/D3_functions.js"></script>
+  <script>
+  var xx = location.search;
+  xx=xx.replace(/[^A-Za-z]/g, "").toLowerCase();
+  var initial_str="this shows the count of letters in this sentence";
+  if (xx.length==0){
+    xx=initial_str;
+  }
+  d3.selectAll("#current_word").select('p').text("CURRENT WORDS:");
+  d3.selectAll("#current_word").append('p').text("\""+ xx + "\"");
+
+ // d3.selectAll("#input1").attr('name',xx);
+
+    var svg=document.getElementById('demo');
+
+    var height=svg.height.baseVal.value;
+    var width=svg.width.baseVal.value;
+    count_func("demo",xx,height,width)
+
+  function myFunction(){
+    var xx=document.getElementById('input1').value;
+    count_func("demo",xx,height,width);
+    d3.selectAll("#current_word").select('p').text(xx);
+
+    // clear text in the box on click
+
+    var ab = document.getElementById('input1').value;
+    document.getElementById('input1').value = "";
+    $('#input1').val('')
+    $('#input1').placeholder('type words');
+
+
+  };
+
+
+
+
+  </script>
+<script src="/data_visualizations/js/d3.min.js"></script>
+  <script src="/data_visualizations/js/jquery.min.js"></script>
+  <script src="/data_visualizations/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
