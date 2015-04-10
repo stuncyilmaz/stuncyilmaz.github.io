@@ -61,7 +61,7 @@
           padding-top: 100px;
           padding-bottom: 20px;
       }
-    .voffset { margin-top: 50px; }
+    .offset { margin-top: 50px; }
   </style>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -105,6 +105,7 @@
       <div class="row">
         <div class="col-lg-6 col-sm-offset-2">
           <div><br></div>
+          <h3><a href="#info">Information related to this project<br><br></a></h3>
 
           <div id= 'current_word'> <p></p> </div>
           <div class="input-group">
@@ -116,14 +117,60 @@
 
           </div><!-- /input-group -->
       </div>
-    </div><!-- /.row -->
+    </div>
+
   </div>
 
 
 
-  <div class="row voffset">
+  <div class="row offset">
     <div class="col-lg-8 col-sm-offset-2" id="svg_holder" >
       <svg id="demo" width=960 height=500 ></svg>
+    </div>
+
+    <div class="col-md-8 col-sm-offset-2">
+        <h3 class="page-header"><a name="info"></a>Student: Selman Tunc Yilmaz</h3>
+        <h4>Functionalities</h4>
+        <br>
+
+          <dl >
+              <dt>C-level</dt>
+
+              <dd>Gets the query string from the page URL, decodes the text, and converts it to lower case.</dd>
+
+              <dd> Uses the letter as the key and the count as the value. Dismisses spaces, punctuation, or special characters.</dd>
+
+              <dd>Logs the decoded input text and counts to the console.</dd>
+
+              <dd>Displays a basic non-interactive bar chart of the counts using D3 in an SVG.</dd>
+
+              <dd>Modified the tick label formatting: changed number of decimal points visible, color and the size.</dd>
+              <dd>Added grid lines. </dd>
+              <dd>Colored vowels differently from consonants.</dd>
+              <dd>Sorted the letters alphabetically.</dd>
+
+              <br>
+
+              <dt>B-level</dt>
+
+              <dd>Added a search box on the page. The word count in that box as well as the word from the URL query string can be used for the plot.</dd>
+
+              <br>
+
+              <dt>A-level</dt>
+
+              <dd>At the start of the visualization, showed one bar at a time and smoothly grew each bar from the bottom up to its value.</dd>
+              <dd>Allowed the user to continue adding new text via a search box and button combo, and used transitions to smoothly update the values.</dd>
+               <br>
+
+          <h4>Functionality Discussion</h4>
+
+          <p>When the webpage launches, the letters from the following string are plotted: "this shows the count of letters in this sentence" unless there is a search query in the URL. The user can constanly change the string by typing to the search box before pressing the 'go button'.</p>
+          <p>The string is converted to lower case.  Spaces, numbers, punctuation, and special characters are dismissed. The letters are sorted alphabetically. Whenever the search button is presses, the canvas is cleared and a new plot with new axes is drawn.</p>
+
+
+          </dl>
+
     </div>
   </div>
 
@@ -146,6 +193,7 @@
 
     var height=svg.height.baseVal.value;
     var width=svg.width.baseVal.value;
+    //console.log(lastParag);
     count_func("demo",xx,height,width)
 
   function myFunction(){
@@ -155,7 +203,7 @@
 
     var paragraphs = d3.selectAll("#current_word").selectAll('p');
     var lastParag  = paragraphs.select(function(d,i){if(i===1){return this}});
-    console.log(lastParag);
+    //console.log(lastParag);
     lastParag.text("\""+ xx + "\"")
 
 

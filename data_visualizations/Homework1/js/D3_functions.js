@@ -24,7 +24,7 @@ function count_func(svgid,x,height2,width2) {
       }
     };
     // console.log(isVowel('e'));
-    // console.log(dict);
+    //console.log(dict);
 
 
     var data=[];
@@ -35,6 +35,14 @@ function count_func(svgid,x,height2,width2) {
       }
 
     data.sort(function(a,b){return d3.ascending(a.letter, b.letter);});
+
+    var keys = Object.keys(dict);
+    var values=[]
+    keys.forEach(function(key){
+      values.push(dict[key])
+    });
+    console.log(keys);
+    console.log(values);
 
     var colors = {
         "grey":   "#bbbbbb",
@@ -103,7 +111,7 @@ function count_func(svgid,x,height2,width2) {
       var transform = d3.transform(tick.attr("transform")).translate;
 
     // passed in "data" is the value of the tick, transform[0] holds the X value
-      console.log("each x tick", data, transform[0])
+      //console.log("each x tick", data, transform[0])
       x_ticks.push(transform[0]);
     });
     var y_ticks = []
@@ -113,7 +121,7 @@ function count_func(svgid,x,height2,width2) {
       var transform = d3.transform(tick.attr("transform")).translate;
 
       // passed in "data" is the value of the tick, transform[0] holds the X value
-      console.log("each y tick", data, transform[1])
+      //console.log("each y tick", data, transform[1])
       y_ticks.push(transform[1]);
     });
 
