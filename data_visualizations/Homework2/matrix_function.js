@@ -80,7 +80,7 @@ function matrix_func(svgid,holderid,height,width) {
 
       svg.append("text")
         .attr("x", (size*traits.length / 2))             
-        .attr("y", 0 - (padding / 2)*0.8)
+        .attr("y", 0 - (padding / 2)*0.6)
         .attr("text-anchor", "middle")  
         .style("font-size", "16px") 
         .text("Matrix Scatter Plot");
