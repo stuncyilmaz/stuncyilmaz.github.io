@@ -29,12 +29,12 @@ function matrix_func(svgid,holderid,height,width) {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .ticks(5);
+      .ticks(8);
 
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left")
-      .ticks(5);
+      .ticks(8);
 
   var color = d3.scale.category10();
 

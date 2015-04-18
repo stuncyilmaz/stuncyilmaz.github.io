@@ -223,37 +223,27 @@
           <dl >
               <dt>C-level</dt>
 
-              <dd>Gets the query string from the page URL, decodes the text, and converts it to lower case.</dd>
-
-              <dd> Uses the letter as the key and the count as the value. Dismisses spaces, punctuation, or special characters.</dd>
-
-              <dd>Logs the decoded input text and counts to the console.</dd>
-
-              <dd>Displays a basic non-interactive bar chart of the counts using D3 in an SVG.</dd>
-
-              <dd>Modified the tick label formatting: changed number of decimal points visible, color and the size.</dd>
-              <dd>Added grid lines. </dd>
-              <dd>Colored vowels differently from consonants.</dd>
-              <dd>Sorted the letters alphabetically.</dd>
+              <dd>Bubble plot that shows individual states when the mouse hover over a bubble.</dd>
 
               <br>
 
               <dt>B-level</dt>
 
-              <dd>Added a search box on the page. The word count in that box as well as the word from the URL query string can be used for the plot.</dd>
+              <dd>Matrix scatter plot with brushing functionality.</dd>
 
               <br>
 
               <dt>A-level</dt>
 
-              <dd>At the start of the visualization, showed one bar at a time and smoothly grew each bar from the bottom up to its value.</dd>
-              <dd>Allowed the user to continue adding new text via a search box and button combo, and used transitions to smoothly update the values.</dd>
+              <dd>Parallel coordinates with brushing and change of variables functionalities.</dd>
                <br>
 
           <h4>Functionality Discussion</h4>
 
-          <p>When the webpage launches, the letters from the following string are plotted: "this shows the count of letters in this sentence" unless there is a search query in the URL. The user can constanly change the string by typing to the search box before pressing the 'go button'.</p>
-          <p>The string is converted to lower case.  Spaces, numbers, punctuation, and special characters are dismissed. The letters are sorted alphabetically. Whenever the search button is presses, the canvas is cleared and a new plot with new axes is drawn.</p>
+          <p>The scatter plot shows the life expectancy in years vs. income in US dollars for US states. The population is coded in the radius of the bubbles, and the colors represent the region. When the mosue hovers over a buble, the population and name of the state is shown.</p>
+          <p>The scatter matrix plot shows relations between high school graduation rate, murder rate, life expectancy and the income. Again the regions are color coded. The mouse can be brushed over a particular area to highlight.</p>
+          <p>Parallel coordinates plot shows the relations between high school graduation rate, murder rate, life expectancy and th eincome. Partricular regions can be brushed with the mouse and the order of the variables can be switched.</p>
+
 
 
           </dl>
