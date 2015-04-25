@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width: 2px;
+  stroke: grey;
+  font-size: 16px;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+</style>
+
+
+
+  <head profile="styilmaz">
+      <meta charset="utf-8">
+
+      <link rel="icon" 
+        type="image/png" 
+        href="/public_html/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Information Visualization</title>
+
+
+    <style type="text/css">
+
+        body {
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+      .offset { margin-top: 50px; }
+    </style>
+
+    <link href="/data_visualizations/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/data_visualizations/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <script src="/data_visualizations/js/jquery.min.js"></script>
+    <script src="/data_visualizations/js/bootstrap.min.js"></script>
+    <script src="/data_visualizations/js/d3.min.js"></script>
+  </head>
+  <body>
+
+      <script src="./line_plots.js"></script>
+      <script src="./stacked_plots.js"></script>
+
+
+            <!-- Fixed Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/">Back to Homepage</a></li>
+                      <li><a href="/data_visualizations">Data Visualizations Page</a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div>
+      </nav>
+
+         <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-offset-2">
+                <div><br></div>
+                <h3><a href="#info">Information related to this project<br></a></h3>
+                <p><a href="https://github.com/stuncyilmaz/stuncyilmaz.github.io/tree/master/data_visualizations/Homework3" target="_blank">source code available here<br><br></a></p>
+                <br>
+              </div>
+            <div class="row offset">
+                <div class="col-lg-11 col-sm-offset-1" id="svg_holder" >
+                      <svg id="demo" width=960 height=500 ></svg>
+                </div>
+            </div>
+
+            <div class="row offset">
+       
+                <div class="col-lg-11  col-sm-offset-1" id="svg_holder2" >
+                      <svg id="demo2" width=800 height=500 ></svg>
+                </div>
+            </div>
+          </div>
+
+<div class="row">
+    <div class="col-md-8 col-sm-offset-2">
+        <h3 class="page-header"><a name="info"></a>Student: Selman Tunc Yilmaz</h3>
+        <h4>Data preprocessing</h4>
+        <br>
+         <dd>In R, I parsed the dates of the time series and created a column for it. For the 100% stacked area chart, for each time point I sclaed the sum of the columns to 1.</dd>
+         <br>
+
+        <h4>Functionalities</h4>
+        <br>
+
+          <dl >
+              <dt>Basic functionality</dt>
+
+              <dd> Multi-Series Line Plot</dd>
+               <dd> Stacked Area Plot</dd>
+
+              <br>
+
+              <dt>Moderate functionality</dt>
+
+              <dd>Details-on-Demand: on hover tooltip details for the Multi-Series Line Plot.</dd>
+              <dd>Panning: click and drag for the Stacked Area Plot.</dd>
+
+              <br>
+
+
+          <h4>Functionality Discussion</h4>
+
+          <p>TMulti-Series Line Plot depicts people killed or seriously injured by car accidents in UK between 1969-1984 per month. The lines represent respectively the drivers, front seat passengers and rear seat passengers. When the mouse hovers over the time range, the exact y-values for each line is shown. We see that when the seat belt law was introduced in 1983 the overall rate of injuries by car accidents decreases.</p>
+          <p>100% Stacked Area Plot shows the same data as the line plot. We observe that the introduction of the seat belt law does not change the proportions between the drivers, fornt and back seat passengers. The plot can be moved along the x-axis.</p>
+ 
+
+
+
+          </dl>
+
+    </div>
+  </div>
+
+
+        <script> 
+          var svg=document.getElementById('demo');
+          var height=svg.height.baseVal.value;
+          var width=svg.width.baseVal.value;
+
+          line_func("demo","svg_holder",height,width);
+
+          var svg=document.getElementById('demo2');
+          var height=svg.height.baseVal.value;
+          var width=svg.width.baseVal.value;
+          stacked_func("demo2","svg_holder2",height,width);
+
+        </script>
+      </body>
+</html>
