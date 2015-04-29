@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head profile="styilmaz">
+      <meta charset="utf-8">
+
+      <link rel="icon" 
+        type="image/png" 
+        href="/public_html/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Information Visualization</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        body {
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+      .offset { margin-top: 50px; }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+          <!-- Fixed Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/">Back to Homepage</a></li>
+                      <li><a href="/data_visualizations">Data Visualizations Page</a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div>
+      </nav>
+
+
+<div class="row">
+    <div class="col-md-8 col-sm-offset-2">
+        <h4>Project Sketch</h4>
+        <br>
+
+          <dl >
+              <dt>Planned Tools</dt>
+
+              <dd>I will use Python and especially  Pandas library for data processing. I am planning to minimize the data processing with javascript.</dd>
+
+              <br>
+
+              <dt>Planned Techniques</dt>
+
+              <dd>Stacked bar chart:
+                  <p>Yearly Number of incidences vs. Cancer Sites, averaged over  1999 – 2011. Stacking is done with respect to sex. This chart will give a general overview on the cancer types.
+                </p></dd>
+
+              <dd>Multi-time series Line Plot:
+                  <p>Percent of all cancer incidences vs. time. Different lines correspond to different races. This chart gives an overview of how cancer evolved over time and across races. Through interaction I will be plotting for each cancer type as well.
+                  </p></dd>
+
+              <dd>Bubble Chart:
+                  <p>x axis: age range, y-axis: the race.  Color coded for sex. Radius proportional to number of incidences.
+                  Hover on: number of incidences for the given race-age combination and fraction of incidences for the race, as well as for the age range. This chart gives an overview on how a given cancer type is distributed over race and age.
+                </p></dd>
+
+              <br>
+
+               <dt>Planned Interaction</dt>
+
+              <dd>Bar chart: Clicking on a bar will interact with the multi-time series plot and the bubble chart. Clicking on the bar will select a cancer type,  and the time series chart  and the bubble chart will be updated. The time series chart  as well as the bubble chart will have 'detail on hover' functionality.</dd>
+              <br>
+
+
+             <dt>Planned Interface</dt>
+             <br>
+
+            <img src="./project_scetch2.png" alt="Mountain View" style="width:604px;height:460px">
+
+
+
+
+
+          </dl>
+
+    </div>
+  </div>
+
+
+
+      </body>
+</html>

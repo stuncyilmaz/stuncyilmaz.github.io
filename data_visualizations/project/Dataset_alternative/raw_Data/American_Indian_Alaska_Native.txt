@@ -1,0 +1,292 @@
+"Cancer Sites"	"Cancer Sites Code"	"Age Group"	"Age Group Code"	"Sex"	"Sex Code"	"Race"	"Race Code"	"Year"	"Year Code"	Count	Population	Crude Rate
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	17	17577	96.7
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	17	19437	87.5
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	17	20839	81.6
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	19	21665	87.7
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	16	22107	72.4
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	18	22659	79.4
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	18	23750	75.8
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	16	24850	64.4
+	"All Cancer Sites Combined"	"0"	"40-44 years"	"40-44"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	24	25259	95.0
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	22	15663	140.5
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	25	16457	151.9
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	25	17420	143.5
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	21	18381	114.2
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	19	19256	98.7
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	26	20278	128.2
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	30	21091	142.2
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	34	22041	154.3
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	28	23032	121.6
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	27	24202	111.6
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	32	24714	129.5
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	21	24441	85.9
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	22	16757	131.3
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	21	18747	112.0
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	18	19715	91.3
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	19	20706	91.8
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	24	22766	105.4
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	17	24080	70.6
+	"All Cancer Sites Combined"	"0"	"45-49 years"	"45-49"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	26	25128	103.5
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	24	11695	205.2
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	26	12592	206.5
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	24	13563	177.0
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	31	14006	221.3
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	29	14771	196.3
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	27	15458	174.7
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	23	16407	140.2
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	30	17505	171.4
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	30	18713	160.3
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	30	19983	150.1
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	40	21180	188.9
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	41	22222	184.5
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	41	22744	180.3
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	16	10891	146.9
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	23	12643	181.9
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	25	13107	190.7
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	22	13869	158.6
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	29	14765	196.4
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	26	15738	165.2
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	24	16733	143.4
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	29	17993	161.2
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	34	19290	176.3
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	32	20537	155.8
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	25	21635	115.6
+	"All Cancer Sites Combined"	"0"	"50-54 years"	"50-54"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	25	22251	112.4
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	17	7991	212.7
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	27	8594	314.2
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	27	9056	298.1
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	31	9974	310.8
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	41	10722	382.4
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	20	11750	170.2
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	27	12657	213.3
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	40	13663	292.8
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	37	14244	259.8
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	42	15143	277.4
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	39	16103	242.2
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	39	17236	226.3
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	39	18099	215.5
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	23	7572	303.8
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	23	8123	283.1
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	27	8558	315.5
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	32	9521	336.1
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	32	10188	314.1
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	32	10935	292.6
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	34	11825	287.5
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	42	12663	331.7
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	40	13243	302.0
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	42	14136	297.1
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	38	15239	249.4
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	45	16310	275.9
+	"All Cancer Sites Combined"	"0"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	48	17139	280.1
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	31	5813	533.3
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	35	6370	549.5
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	31	6736	460.2
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	23	7227	318.3
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	41	7657	535.5
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	24	8147	294.6
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	26	8658	300.3
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	25	9660	258.8
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	48	10426	460.4
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	31	11608	267.1
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	47	12575	373.8
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	59	13483	437.6
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	26	5294	491.1
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	26	5632	461.6
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	46	5979	769.4
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	33	6281	525.4
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	40	6762	591.5
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	28	7187	389.6
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	36	7659	470.0
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	49	8238	594.8
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	48	9259	518.4
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	50	10088	495.6
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	58	10905	531.9
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	61	11822	516.0
+	"All Cancer Sites Combined"	"0"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	54	12694	425.4
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	23	4286	536.6
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	24	4492	534.3
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	18	4786	376.1
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	23	4976	462.2
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	25	5285	473.0
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	23	5604	410.4
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	29	5853	495.5
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	32	6136	521.5
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	35	6601	530.2
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	39	7167	544.2
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	42	7741	542.6
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	45	8369	537.7
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	51	8825	577.9
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	26	3756	692.2
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	27	3890	694.1
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	45	4092	1099.7
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	27	4379	616.6
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	31	4658	665.5
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	39	4948	788.2
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	36	5272	682.9
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	39	5558	701.7
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	54	5931	910.5
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	45	6528	689.3
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	50	7061	708.1
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	56	7532	743.5
+	"All Cancer Sites Combined"	"0"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	52	7921	656.5
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	21	3398	618.0
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	30	3595	834.5
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	25	3772	662.8
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	31	3924	790.0
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	26	4071	638.7
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	35	4267	820.2
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	29	4572	634.3
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	38	4744	801.0
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	30	5101	588.1
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	39	5391	723.4
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	37	5674	652.1
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	26	5942	437.6
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	26	2756	943.4
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	18	2899	620.9
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	35	3026	1156.6
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	29	3126	927.7
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	26	3295	789.1
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	38	3388	1121.6
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	33	3526	935.9
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	40	3628	1102.5
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	48	3881	1236.8
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	33	4185	788.5
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	43	4500	955.6
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	29	4774	607.5
+	"All Cancer Sites Combined"	"0"	"70-74 years"	"70-74"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	40	5120	781.2
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	25	2643	945.9
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	19	2714	700.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	17	2815	603.9
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	26	2957	879.3
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	30	3048	984.3
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	21	3243	647.5
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	23	3275	702.3
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	24	3462	693.2
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	25	3665	682.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	28	3874	722.8
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	24	4043	593.6
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	31	4166	744.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	16	1749	914.8
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	17	1861	913.5
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	17	1947	873.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	28	2015	1389.6
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	18	2188	822.7
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	27	2312	1167.8
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	25	2456	1017.9
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	32	2597	1232.2
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	29	2703	1072.9
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	27	2872	940.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	25	2976	840.1
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	31	3129	990.7
+	"All Cancer Sites Combined"	"0"	"75-79 years"	"75-79"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	35	3238	1080.9
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	16	1612	992.6
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	17	1763	964.3
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	24	1880	1276.6
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	21	2030	1034.5
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	21	2184	961.5
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	25	2313	1080.8
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	22	2467	891.8
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	23	2585	889.7
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	28	2727	1026.8
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	27	2854	946.0
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	21	2949	712.1
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	17	1306	1301.7
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	17	1601	1061.8
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	20	1930	1036.3
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	24	2016	1190.5
+	"All Cancer Sites Combined"	"0"	"80-84 years"	"80-84"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	20	2060	970.9
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	16	1393	1148.6
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	18	1573	1144.3
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	17	1730	982.7
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	21	1846	1137.6
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	17	2154	789.2
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	17	2332	729.0
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	20	2532	789.9
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	20	2721	735.0
+	"All Cancer Sites Combined"	"0"	"85+ years"	"85+"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	21	1305	1609.2
+	"Digestive System"	"21010-21130"	"55-59 years"	"55-59"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	20	14136	141.5
+	"Digestive System"	"21010-21130"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	16	9259	172.8
+	"Male and Female Breast"	"26000"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	16	24714	64.7
+	"Male and Female Breast"	"26000"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	17	21180	80.3
+	"Male and Female Breast"	"26000"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	16	13663	117.1
+	"Male and Female Breast"	"26000"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	17	14244	119.3
+	"Male and Female Breast"	"26000"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	19	10426	182.2
+	"Male and Female Breast"	"26000"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	22	13483	163.2
+	"Male and Female Breast"	"26000"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	19	8825	215.3
+	"Female Breast"	"26000-Female"	"45-49 years"	"45-49"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	16	24714	64.7
+	"Female Breast"	"26000-Female"	"50-54 years"	"50-54"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	17	21180	80.3
+	"Female Breast"	"26000-Female"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	16	13663	117.1
+	"Female Breast"	"26000-Female"	"55-59 years"	"55-59"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	17	14244	119.3
+	"Female Breast"	"26000-Female"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	19	10426	182.2
+	"Female Breast"	"26000-Female"	"60-64 years "	"60-64"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	22	13483	163.2
+	"Female Breast"	"26000-Female"	"65-69 years"	"65-69"	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	19	8825	215.3
+	"Male Genital System"	"28010-28040"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	19	8238	230.6
+	"Male Genital System"	"28010-28040"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	19	10905	174.2
+	"Male Genital System"	"28010-28040"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	18	11822	152.3
+	"Male Genital System"	"28010-28040"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	17	5931	286.6
+	"Male Genital System"	"28010-28040"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	26	7532	345.2
+	"Male Genital System"	"28010-28040"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	18	7921	227.2
+	"Prostate"	"28010"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	18	8238	218.5
+	"Prostate"	"28010"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	19	10905	174.2
+	"Prostate"	"28010"	"60-64 years "	"60-64"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	18	11822	152.3
+	"Prostate"	"28010"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	17	5931	286.6
+	"Prostate"	"28010"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	26	7532	345.2
+	"Prostate"	"28010"	"65-69 years"	"65-69"	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	17	7921	214.6
+"---"
+"Dataset: United States Cancer Statistics, 1999-2011 Incidence"
+"Query Parameters:"
+"Title: American_Indian_Alaska_Native"
+"Age Group: All"
+"Cancer Sites: All"
+"Ethnicity: All"
+"Race: American Indian or Alaska Native"
+"Sex: All"
+"State: California (06)"
+"Year: All, 1999 to 2011"
+"Group By: Cancer Sites, Age Group, Sex, Race, Year"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Standard Population: 2000 U.S. Std. Million"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/cancer-v2011.html for more information."
+"---"
+"Query Date: Apr 28, 2015 3:33:09 PM"
+"---"
+"Suggested Citation: United States Cancer Statistics: 1999 - 2011 Incidence, WONDER Online Database. United States Department of"
+"Health and Human Services, Centers for Disease Control and Prevention and National Cancer Institute; 2014. Accessed at"
+"http://wonder.cdc.gov/cancer-v2011.html on Apr 28, 2015 3:33:09 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with zero Count are hidden. Use Quick Options above to show zero rows."
+"3. Rows with suppressed Count are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Data for in situ Breast Cancers are listed separately from Breast Cancers and not included in the ""all sites"" category."
+"---"
+Caveats:
+"1. The ""Show Totals"" checkbox is disabled when data are grouped by Cancer Sites or by Childhood Cancer, because aggregate"
+"values are displayed in the table. Also be aware that charts and maps containing both aggregate and detail data could be"
+"misleading."
+"2. Age-adjusted rates are not available when results are grouped by age."
+"3. Data are suppressed if fewer than 16 cases are reported in the specific category. Data for the ""Asian / Pacific Islander"","
+"""American Indian or Alaska Native"", and the ""Other Races Combined"" race categories are suppressed at the Metropolitan"
+"Statistical Area level for populations less than 50,000 persons. Data are suppressed at the state level for certain race and"
+"ethnicity groups: 1) American Indian or Alaska Native data are suppressed at the state level for Delaware, Georgia, Illinois,"
+"Kansas, Kentucky, Missouri, New Jersey, New York, and South Carolina; 2) Asian or Pacific Islander data are suppressed at the"
+"state level for Delaware, Illinois, Kansas, Kentucky, Missouri, and South Carolina; 3) Hispanic data are supressed at the state"
+"level for Delaware, Kentucky, Massachusetts, Missouri, Pennsylvania, and South Carolina. More information:"
+"http://wonder.cdc.gov/wonder/help/cancer-v2011.html#Confidentiality."
+"4. Gender-specific cancers will show 'Not Applicable' when the wrong sex is selected. More information:"
+"http://wonder.cdc.gov/wonder/help/cancer-v2011.html#Genital Cancers List."
+"5. Data are from selected statewide and metropolitan area cancer registries that meet data quality criteria."
+"6. For the 2005 year, the Census Bureau estimates that 203,937 persons were displaced from Alabama, Louisiana, Mississippi and"
+"Texas due to Hurricanes Katrina and Rita. CDC WONDER does not include the displaced persons in the 2005 population counts for"
+"these states, nor are these counts included in the summary populations for the affected division, regions or national"
+"population. However, the USCS web site does include these displaced persons in the national population figures for 2005."
+"7. Information on primary site, behavior, and histology was coded according to the International Classification of Diseases for"
+"Oncology, Third Edition (ICD-O-3) and categorized according to the revised SEER recodes dated January 27, 2003, which define"
+"standard groupings of primary cancer sites."
