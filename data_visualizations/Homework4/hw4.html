@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<style type="text/css">
+
+.container-fluid {
+  padding-top: 700px;
+}
+
+#BAR_large_Chart {    
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:400px;
+  height: 600px; 
+}
+
+
+
+#lineChart {    
+  position:absolute;
+  top:60px;
+  left:410px;
+  height: 250px;
+}
+
+#barChart {
+  position:absolute;
+  top:310px;
+  left:410px;
+  height: 250px;
+}
+
+
+
+
+/*for line chart*/
+.axis_line path,
+.axis_line line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width: 2px;
+  stroke: grey;
+  font-size: 12px;
+}
+
+
+.x.axis_line path {
+  display: none;
+}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+
+
+.axis_line text {
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.x.axis_line text {
+    font-family: sans-serif;
+    font-size: 8px;
+
+}
+
+.y.axis_line text {
+    font-family: sans-serif;
+    font-size: 12px;
+
+}
+
+
+
+.title {
+   font-family: Verdana;
+    font-size: 15px;  
+    
+}
+
+/*for bar chart*/
+.xAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: black;
+}  
+
+.yAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: white;
+}
+
+  
+table {
+  border-collapse:collapse;
+  border: 0px;  
+  font-family: Verdana; 
+  color: #5C5558;
+  font-size: 12px;
+  text-align: right;      
+}
+
+td {
+  padding-left: 10px;   
+}
+
+#lineChartTitle1 {
+  font-family: Verdana;
+  font-size  : 14px;
+  fill       : lightgrey;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+#lineChartTitle2 {
+  font-family: Verdana;
+  font-size  : 72px;
+  fill       : grey;
+  text-anchor: middle;
+  font-weight: bold;
+  /*font-style: italic;*/
+}
+         
+</style>
+
+<style>
+/*.bar {
+  fill: steelblue;
+}*/
+
+
+
+.bar:hover {
+  fill: #000000;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #100C34;
+  stroke-width: 2px;
+  font-size: 16px;
+}
+
+.y.axis text {
+    font-family: sans-serif;
+    font-size: 12px
+}
+
+.x.axis text {
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+</style>
+
+
+  <head profile="styilmaz">
+      <meta charset="utf-8">
+
+      <link rel="icon" 
+        type="image/png" 
+        href="/public_html/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Information Visualization</title>
+
+
+    <style type="text/css">
+
+        body {
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+      .offset { margin-top: 100px; }
+      .offset2 { margin-top: 150px; }
+    </style>
+
+
+    <link href="/data_visualizations/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/data_visualizations/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <script src="/data_visualizations/js/jquery.min.js"></script>
+    <script src="/data_visualizations/js/bootstrap.min.js"></script>
+    <script src="/data_visualizations/js/d3.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="/data_visualizations/Homework4/plot_functions.js"></script>
+  </head>
+  <body>
+
+
+            <!-- Fixed Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/">Back to Homepage</a></li>
+                      <li><a href="/data_visualizations">Data Visualizations Page</a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div>
+      </nav>
+
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 col-md-offset-4">
+              <h3>Movies Dataset</h3>
+              </div>
+          </div>
+        </div>
+
+          <div class="col-lg-6 offset2" id="BAR_large_Chart"></div>
+          <div class="col-lg-4 col-md-offset-1">
+              <div class="row" id="lineChart" > </div>
+              <div class="row" id= "barChart" > </div>
+          </div>
+
+    </div>
+
+  <div class="container container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-sm-offset-2">
+        <p><a href="https://github.com/stuncyilmaz/stuncyilmaz.github.io/tree/master/data_visualizations/Homework4" target="_blank">source code available here<br></a></p>
+  </div>
+  </div>
+    <div class="row">
+    <div class="col-md-8 col-sm-offset-2">
+        <h3 class="page-header"><a name="info"></a>Student: Selman Tunc Yilmaz</h3>
+        <h4>Data preprocessing</h4>
+        <br>
+         <dd>I obtained the data in R. Using Pandas in Python I processed the data individually for each panel in the dashboard. For example for the time series panel, I prepared a dataset having variables year and genre, and averaged the rating over the rating sources r1, r2, ..., r10. </dd>
+         <br>
+
+        <h4>Functionalities</h4>
+        <br>
+
+          <dl >
+              <dt>Basic functionality</dt>
+
+              <dd> A prototype in tableau can be found <font size="3"><a href="./tableau_prototype.html">here.</a></font></dd>
+
+              <br>
+
+              <dt>Moderate functionality</dt>
+
+              <dd>There are three panels with two methods, namely two bar charts and one time series line plot.</dd>
+
+              <br>
+
+              <dt>Advanced Functionality</dt>
+
+              <dd>Clicking a bar in the left chart filters the genre and only the information for this genre is shown in the time series and bar charts.</dd>
+
+              <br>
+
+
+          <h4>Functionality Discussion</h4>
+
+          <p>When the page launches the left bar chart and the time series plot show aggregated information over all the genres. By clicking on a bar in the left bar chart filters the information for the desired genre. The left bar chart itself shows how many ratings there are in the data set for each genre.</p>
+
+    </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    
+    
+/*
+################ FORMATS ##################
+-------------------------------------------
+*/
+
+
+var   formatAsPercentage = d3.format("%"),
+    formatAsPercentage1Dec = d3.format(".1%"),
+    formatAsInteger = d3.format(","),
+    fsec = d3.time.format("%S s"),
+    fmin = d3.time.format("%M m"),
+    fhou = d3.time.format("%H h"),
+    fwee = d3.time.format("%a"),
+    fdat = d3.time.format("%d d"),
+    fmon = d3.time.format("%b")
+    ;
+
+
+/*
+############# Big BAR CHART ###################
+-------------------------------------------
+*/
+
+d3.json('df_1.json', function(error, data_set) {
+    if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+        data.push(data_set[key]);
+
+      }
+
+    // console.log(data);
+    dsBAR_large_Chart(data);
+ 
+  });
+
+
+/*
+############# BAR CHART ###################
+-------------------------------------------
+*/
+
+var datasetBarChart;
+
+// set initial group value
+var group = "All";
+
+d3.json('df_3.json', function(error, data_set) {
+    if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+        data.push(data_set[key]);
+
+      }
+
+  datasetBarChart =data;
+
+  dsBarChart();
+
+
+  });
+
+/*
+############# LINE CHART ##################
+-------------------------------------------
+*/
+
+// set initial category value
+var group = "All";
+
+var datasetLineChart;
+d3.json('df_2.json', function(error, data_set) {
+    if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+        data.push(data_set[key]);
+
+      }
+
+  datasetLineChart=data;
+
+  dsLineChart();
+
+  });
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+      </body>
+</html>
