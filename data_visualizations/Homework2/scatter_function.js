@@ -64,7 +64,7 @@ d3.csv("state.x77.csv", function(error, dataset){
 
       
       x_data=dataset.map(function(d) { return +x(d); });
-      y_data=dataset.map(function(d) { return +y(d);; });
+      y_data=dataset.map(function(d) { return +y(d); });
       r_data=dataset.map(function(d) { return +radius(d); });
       col_data=dataset.map(function(d) { return +color(d); });
 
