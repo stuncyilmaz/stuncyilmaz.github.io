@@ -45,7 +45,7 @@ var svg = d3.selectAll("#"+holderid).select("svg")
 d3.csv("drivers.csv", function(error, data) {
 
   color.domain(d3.keys(data[0]).filter(function(key) { return ( ['drivers','front-seat passengers','rear-seat passengers'].indexOf(key)!=-1  ); }));
-  // console.log(data)
+  console.log(data)
 
   data.forEach(function(d) {
     d.date = parseDate(d.date);

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<style type="text/css">
+
+
+.bar:hover {
+  fill: orangered ;
+}
+
+
+.d3-tip   {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}    
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+</style>
+<style>
+
+.bar.positive {
+  fill: steelblue;
+}
+
+.bar.negative {
+  fill: brown;
+}
+.bar.negative:hover {
+  fill: orangered ;
+}
+
+.bar.positive:hover {
+  fill: orangered ;
+}
+
+.axis_label text {
+  font: 12px sans-serif;
+}
+
+.axis_label path{
+  display: none;
+}
+
+.axis_label line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+}
+</style>
+
+<style type="text/css">
+        circle {
+          fill-opacity: .7;
+        }
+
+        circle.hidden {
+          fill: #ccc !important;
+        }
+
+    .dot {
+      stroke: #000;
+    }
+    .d3-tip   {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }                         
+
+
+    .legend_bubble rect {
+      fill:white;
+      stroke:black;
+      opacity:0.8;}
+    }
+</style>
+
+<style type="text/css">
+
+.container-fluid {
+  padding-top: 700px;
+}
+
+#horz_bar {    
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:400px;
+  height: 600px; 
+}
+
+
+
+#lineChart {    
+  position:absolute;
+  top:650px;
+/*  left:410px;*/
+  width:400px;
+  height: 500px; 
+}
+
+#bubbleChart {
+  position:absolute;
+  top:650px;
+/*  left:410px;*/
+  width:600px;
+  height: 500px; 
+}
+
+
+
+
+/*for line chart*/
+.axis_line path,
+.axis_line line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width: 2px;
+  stroke: grey;
+  font-size: 12px;
+}
+
+
+.x.axis_line path {
+  display: none;
+}
+
+
+.line {
+  fill: none;
+/*  stroke: steelblue;*/
+  stroke-width: 2px;
+}
+
+
+
+/*.axis_line text {
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.x.axis_line text {
+    font-family: sans-serif;
+    font-size: 8px;
+
+}
+
+.y.axis_line text {
+    font-family: sans-serif;
+    font-size: 12px;
+
+}*/
+
+/*for line chart*/
+.axis_bubble path,
+.axis_bubble  line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width: 2px;
+  stroke: grey;
+  font-size: 12px;
+}
+
+
+
+.title {
+   font-family: Verdana;
+    font-size: 15px;  
+    
+}
+
+/*for bar chart*/
+.xAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: black;
+}  
+
+.yAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: white;
+}
+
+
+
+#lineChartTitle1 {
+  font-family: Verdana;
+  font-size  : 14px;
+  fill       : grey;
+  font-weight: bold;
+  text-anchor: middle;
+}
+         
+</style>
+<style>
+  .legend_line {
+    font-size: 12px;
+
+  }
+
+</style>:
+
+<style>
+/*.bar {
+  fill: steelblue;
+}*/
+
+
+
+.bar:hover {
+  fill: #000000;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #100C34;
+  stroke-width: 2px;
+  font-size: 16px;
+}
+
+.y.axis text {
+    font-family: sans-serif;
+    font-size: 12px
+}
+
+.x.axis text {
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+
+.label {
+/*      fill: #777;*/
+        font-family: sans-serif;
+    font-size: 15px
+    }
+</style>
+
+
+
+</style>
+  <head profile="styilmaz">
+      <meta charset="utf-8">
+
+      <link rel="icon" 
+        type="image/png" 
+        href="/public_html/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Information Visualization</title>
+
+
+    <style type="text/css">
+
+        body {
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+      .offset { margin-top: 100px; }
+      .offset2 { margin-top: 200px; }
+    </style>
+
+
+    <link href="/data_visualizations/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/data_visualizations/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <script src="/data_visualizations/js/jquery.min.js"></script>
+    <script src="/data_visualizations/js/bootstrap.min.js"></script>
+    <script src="/data_visualizations/js/d3.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="/data_visualizations/project/project_report/plot_functions.js"></script>
+
+    <script src="/data_visualizations/project/project_report/d3.legend.js"></script>
+    <script src="/data_visualizations/project/project_report/d3.tip.v0.6.3.js"></script>
+    <script src="/data_visualizations/project/project_report/scatter_function.js"></script>
+    <script src="/data_visualizations/project/project_report/horz_bar_plot.js"></script>
+  </head>
+  <body>
+
+
+            <!-- Fixed Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/">Back to Homepage</a></li>
+                      <li><a href="/data_visualizations">Data Visualizations Page</a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div>
+      </nav>
+
+
+      <div class="container">
+
+<!--         <div class="row">
+          <div class="col-lg-8 col-md-offset-2">
+              <h3>Cancer Incidence Analysis in California for 1999-2011</h3>
+          </div>
+      </div> -->
+
+
+        <div class="row">
+             <!--  <div class="col-lg-6 offset" id="BAR_large_Chart"></div> -->
+               <div class="col-lg-6 offset" id="horz_bar"></div>
+<!--                   <div class="col-lg-4 col-md-offset-1">
+                      <div class="row" id="lineChart"> </div>
+                      <div class="row" id= "bubbleChart" > </div>
+                  </div> -->
+        </div>
+
+        <div class="row">
+          <div class="col-sm--4" id="lineChart"></div>
+           <div class="col-sm--6 col-sm-offset-5" id= "bubbleChart"></div>
+
+        </div>
+    </div>
+
+
+  <div class="container container-fluid">
+
+    <div class="row offset2">
+    <div class="col-md-8 col-sm-offset-2">
+        <h3 class="page-header"><a name="info"></a>Student: Selman Tunc Yilmaz</h3>
+        <p><a href="https://github.com/stuncyilmaz/stuncyilmaz.github.io/tree/master/data_visualizations/project/project_report" target="_blank">source code available here<br></a></p>
+        <h4>Dataset Summary</h4>
+        <br>
+         <dd> The dataset provides statistics of major cancer incidence frequencies in California between 1999-2011. The data is across cancer types, sex, races and age groups. The populations for each subgroup in the data is provided. From populations and and incidence frequencies, incidence rates for each subpopulation is calculated. More information on the dataset can be found in the <a href="/data_visualizations/project/Dataset/dataset.html" target="_blank">dataset webpage</a> and the the links therein. Most of the preprocessing is done using Python.</dd>
+         <br>
+
+        <h4>Techniques</h4>
+        <strong> Double Bar Chart </strong>
+          <br><br>
+         <dd> 
+          This is the central plot in my visualization. The bars helps the user filter the data in the other plots. In this plot I am showing the total number of incidences over 1999-2011 for males and females, across different cancer sites. In aggregated the cancen incidence counts over the years and the age groups. I made a horizontal bar chart so that the long cancer site labels can be read easily. Since the y-axis labels are far away from the bars, I also included a detail on mouseover interactivity. The patterns for females and males are very different. A two sided bar chart makes it easy to read the value of an individual bar, as well as it provides a good enough comparison between females and males for a given cancer site. I sorted the cancer sites with respect to the total number of incidence (males plus females.) <br> 
+           The lie-factor is 1. The counts are proportional to the bar lengths. Data-to-ink ratio is moderate since the width of a bar does not represent any information.The plot is not dense in data. We only have counts and cancer sites for males and females. There is a lot of empty space.<br> 
+           This plot gives an excellent overview on different cancer sites, describing which cancer types are more prevalent across sex. The bar plot shows how a given cancer type relates to other types, and the rest of the visualization provides more detail on the selected cancer site.
+         </dd>
+
+          <br>
+        <strong> Multi-Series Line Chart </strong>
+          <br><br>
+         <dd> 
+
+          The chart shows how the selected cancer type evolved over time across races. For a given year, cancer type, sex and the race, I calculated the incidence rate by dividing the incidence count by the respective population. This data is aggregated over age groups. We clearly see whether for a cancer types the trend over time is decreasing or increasing, and whether a given race is more or less suseptible to the chosen cancer type than the others. For example colon cancer rate has a particularly decreasing trend. Compared to white people, african-americans or blacks people are much less susceptible  to skin cancer, and asians are much less susceptible to  lung cancer. From the bar chart we know how different cancer types related to each other. The purpose of the line chart is to show the trend over time. Therefore I am scaling the y-axis for each selected cancer site. The races are color-coded, and I am using the same color code for the bubble chart as well. Whenever a bar is clicked, the respective cancer type ans sex appears in the title. <br>
+           The lie-factor is again 1. The data-to-ink ratio is high. Every point on the line represents a data. The data density is moderate. There are four lines, but also still lots of ampty space.  <br>
+            This plot excells at showing two things: Comparing different races, and the trend over the years.
+
+
+         </dd>
+          <br>
+        <strong> Bubble Chart </strong>
+          <br> <br>
+         <dd> This plot required the most data processing. I wanted to show how a given cancer depends on the age, and also wanted to depict this dependence across different races. The age information is provided as a categorical variable as age ranges. There are 19 age groups, each group with an age range of 5 years. Since there are many categories, I thought it would be confusing to make a categorical vizualition, such as a bar chart. Instead I converted the age ranges into a continous variable by reprenting each age category by its mean. Hence in this plot, I am plotting the  the cancer incidence rate (as in the line chart) as a function of the age. I also wanted to provide information on how large each population is for which the incidence rate is calculated. The population is encoded in the radius. Since the populations across races and ages differ immensely, making the radius linearly proportional to the population was not feasible. The logarith of the population is now proportiobal the the radius of the buble<br>
+        For the data represented by the x-y position of the buble, the lie factor is almost 1. Since I take the avreage of each age group and also label eveyone older than 85 as 85, there is some arbitrariness in the x-position. But this does not systematically alters the lie-factor into any direction. The way I represent the population by the radius has lie-factor far from unity. because of the logarithmic transformation. Differences between small populations are  emphasized at the expense of comparing larger populations. Data to ink ratio is moderate. Representing data with the bubble area uses too much ikn. Data density is also moderate.<br>
+        This plot nicely provides an overview how on a persons susceptibily to a cancer type, as he/she gets older, taking into account the race and the gender. 
+         </dd>
+
+         <br>
+        <h4>Interactivity</h4>
+          <br>
+         <dd> Clicking on a bar filters the data for the chosen cancer type and gender. This data is depicted in the line and buble charts. Since the y-axis for the bar chart is far away from the smaller bars, I included hover-on detail interactivity for the bar chart. Also upon mouse hover, the color of the bar changes to orange so that we know which bar we are clicking. After clicking, the data as well as the axes for the line and bar charts are updated. The title of the line chart is also updated, showing the selected cancer type and the gender. Since the x- and the y axis for the bubble chart are hard to read, and since the lie factor for population far from unity, I implemented hover-on detail functionality for the bubble chart. Updating the axes was crucial since the cancer rates vary drastically across cancer types and sex.
+
+          <dd> 
+
+         <br>
+        <h4>Feedback</h4>
+          <br>
+         <dd> In my prototype the bar chart was vertical. I had a feedback that I should make it horizontal so that he cancer labels can be read easily. This was already my plan for the final project. But I found it very challenging to make a horizontal bar chart with two categories. Thanks to this clear feedback, I had enough determination for not giving up making a easy-to-use bar chart.
+         </dd> 
+
+         <br>
+        <h4>Challenges</h4>
+          <br>
+         <dd> My first challenge was how to make the plots interact with each other. From  <strong><a href="http://bl.ocks.org/diethardsteiner/3287802" target="_blank">this example</a></strong> I figured out how to filter the data with a click on the bar. It took me some time to figure out how to update the axes of the line and the bubble charts after clicking on the bar chart. I finally solved this problem by creating "xAxis" and "yAxis" variables as global variables outside of the functions that create the plots. My second big challenge was drawing the horizontal bar chart with two categories. I could not find much help from the web, but <strong><a href="https://gist.github.com/mbostock/2368837" target="_blank">this code</a></strong> was very helpful. It gave the idea of representing the males as negative counts, but formating the x-axis so that all the counts appear as positive numbers.</dd>
+
+
+    </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    
+
+
+/*
+############# Big BAR CHART ###################
+-------------------------------------------
+*/
+
+d3.json('df_1_project.json', function(error, data_set) {
+
+      if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+        data.push(data_set[key]);
+
+      }
+
+      horz_bar(data);
+
+  });
+// d3.json('df_1_project.json', function(error, data_set) {
+//     if (error) return console.warn(error);
+
+//     var data=[];
+//     for (var key in data_set ){
+
+//         data.push(data_set[key]);
+
+//       }
+
+
+//     // console.log(data);
+//     dsBAR_large_Chart(data);
+ 
+//   });
+
+
+/*
+############# BAR CHART ###################
+-------------------------------------------
+*/
+
+var datasetBubbleChart;
+
+// set initial group value
+var group = "All";
+var Sex = "Female";
+
+d3.csv("df_3_project.csv", function(error, data_set){
+    if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+        data.push(data_set[key]);
+
+      }
+      //Width and height
+
+
+  datasetBubbleChart =data;
+  var xAxis_bubble;
+  var yAxis_bubble;
+  scatter_func();
+
+
+  });
+
+/*
+############# LINE CHART ##################
+-------------------------------------------
+*/
+
+
+
+
+// set initial category value
+// var group = "All";
+
+var datasetLineChart;
+d3.json('df_2_project.json', function(error, data_set) {
+    if (error) return console.warn(error);
+
+    var data=[];
+    for (var key in data_set ){
+
+      // if(data_set[key].Race=='Black or African American' ){
+      //   data.push(data_set[key]);
+      // };
+      data.push(data_set[key]);
+        
+
+      }
+
+  datasetLineChart=data;
+  // console.log(datasetLineChart)
+  var yAxis;
+  var xAxis;
+  dsLineChart();
+
+  });
+
+
+
+//   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+      </body>
+</html>
