@@ -167,7 +167,7 @@ svg.call(tip);
       svg.append("text")
       // .attr("class", "y label")
       .attr("text-anchor", "end")
-      .attr("y", -h/6-30)
+      .attr("y", -h/6-25)
       .attr("x", -h/6+25)
       .attr("dy", ".75em")
       .attr("transform", "rotate(-90)")

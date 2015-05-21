@@ -246,7 +246,7 @@ var line = d3.svg.line()
     gy.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
-      .attr("dy", "-4.71em")
+      .attr("dy", "-4em")
        .attr("dx", "0.0em")
       .style("text-anchor", "end")
       .text("Incidence Rate (per 100,00 people)");
