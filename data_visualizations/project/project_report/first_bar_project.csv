@@ -1,0 +1,45 @@
+,category,Sex,measure,sum_column
+0,Brain and Other Nervous System,Female,113318.0,251639.0
+1,Breast,Female,2590705.0,2612300.0
+2,Cervix Uteri,Female,159224.0,159224.1
+3,Colon and Rectum,Female,914559.0,1867353.0
+4,Corpus Uteri,Female,495083.0,495083.1
+5,Esophagus,Female,41522.0,188741.0
+6,Gallbladder,Female,28804.0,40380.0
+7,Kidney and Renal Pelvis,Female,217625.0,568296.0
+8,Larynx,Female,31110.0,154184.0
+9,Leukemias,Female,210681.0,490013.0
+10,Liver,Female,56889.0,214335.0
+11,Lung and Bronchus,Female,1181844.0,2608829.0
+12,Melanoma of the Skin,Female,286702.0,677133.0
+13,Myeloma,Female,103054.0,225175.0
+14,Non-Hodgkin Lymphoma,Female,343019.0,736831.0
+15,Oral Cavity and Pharynx,Female,129046.0,422897.0
+16,Ovary,Female,269323.0,269323.1
+17,Pancreas,Female,225822.0,449963.0
+18,Stomach,Female,102320.0,264654.0
+19,Thyroid,Female,298365.0,393107.0
+20,"Urinary Bladder, invasive and in situ",Female,204249.0,814818.0
+21,Prostate,Female,0.1,2628855.1
+22,Brain and Other Nervous System,Male,138321.0,251639.0
+23,Breast,Male,21595.0,2612300.0
+24,Cervix Uteri,Male,0.1,159224.1
+25,Colon and Rectum,Male,952794.0,1867353.0
+26,Corpus Uteri,Male,0.1,495083.1
+27,Esophagus,Male,147219.0,188741.0
+28,Gallbladder,Male,11576.0,40380.0
+29,Kidney and Renal Pelvis,Male,350671.0,568296.0
+30,Larynx,Male,123074.0,154184.0
+31,Leukemias,Male,279332.0,490013.0
+32,Liver,Male,157446.0,214335.0
+33,Lung and Bronchus,Male,1426985.0,2608829.0
+34,Melanoma of the Skin,Male,390431.0,677133.0
+35,Myeloma,Male,122121.0,225175.0
+36,Non-Hodgkin Lymphoma,Male,393812.0,736831.0
+37,Oral Cavity and Pharynx,Male,293851.0,422897.0
+38,Ovary,Male,0.1,269323.1
+39,Pancreas,Male,224141.0,449963.0
+40,Stomach,Male,162334.0,264654.0
+41,Thyroid,Male,94742.0,393107.0
+42,"Urinary Bladder, invasive and in situ",Male,610569.0,814818.0
+43,Prostate,Male,2628855.0,2628855.1

@@ -35,13 +35,13 @@ function x(d) { return +d['category']; }
 function y(d) { return +d['measure']; }
 function radius(d) { return +d['population']; }
 function color(d) { return d['Race']; }
-function key(d) { return d['Race']; }
+function key1(d) { return d['Race']; }
 
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<span style='color:white'>" + key(d) + "<br>Population: "+d3.format(",")(Math.floor(radius(d)))+
+    return "<span style='color:white'>" + key1(d) + "<br>Population: "+d3.format(",")(Math.floor(radius(d)))+
     "<br>Age: "+d3.format(",")(Math.floor(x(d)))+  "</span>";
   })
 
@@ -59,12 +59,13 @@ var dataset=firstDdatasetBubbleChart;
 
       
       x_data=dataset.map(function(d) { return +x(d); });
+      key_data=dataset.map(function(d) { return d.key; });
       // console.log(x_data);
       y_data=dataset.map(function(d) { return +y(d); });
       r_data=dataset.map(function(d) { return +radius(d); });
       col_data=dataset.map(function(d) { return +color(d); });
 
-      //console.log(x_data);
+      console.log(key_data);
       //console.log(dataset);
       //Create scale functions
 
@@ -215,6 +216,9 @@ legend.append('text')
 
 
 function updateBubbleChart(group,Sex) {
+
+
+
   // console.log(group);
 
   var races_names=['White','Black or African American',
@@ -246,14 +250,17 @@ function updateBubbleChart(group,Sex) {
 // Various accessors that specify the four dimensions of data to visualize.
 function x(d) { return +d['category']; }
 function y(d) { return +d['measure']; }
-// function radius(d) { if(d['population']>500000){return +d['population'];};
-// return 500000;
-//  }
-
-
-function radius(d) { return +d['population'];}
+function radius(d) { return +d['population']; }
 function color(d) { return d['Race']; }
-function key(d) { return d['Sex']; }
+function key1(d) { return d['Race']; }
+
+  var tip2 = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<span style='color:white'>" + key1(d) + "<br>Population: "+d3.format(",")(Math.floor(radius(d)))+
+    "<br>Age: "+d3.format(",")(Math.floor(x(d)))+  "</span>";
+  });
 
 
 
@@ -313,20 +320,21 @@ function order(a, b) {
 
   //Create SVG element
     var svg = d3.select("#bubbleChart").selectAll('svg');
+      svg.call(tip2);
+
 
 // Create SVG element (remember use normal CSS style attributes)
 
 
 
 
+    var curPoints = svg.selectAll("circle").data(dataset, function(d) { return d.key; });
+    var newPoints = curPoints.enter();
+    var oldPoints = curPoints.exit();
 
-      var circle = d3.selectAll("circle")
-      .data(dataset);
 
-circle.enter().append("circle");
- circle.exit().remove();
 
-    circle
+curPoints 
       .transition()
     .duration(750)
       .attr("class", "dot")
@@ -342,6 +350,37 @@ circle.enter().append("circle");
       })
       // .attr("data-legend",function(d) { return color(d)})
       .sort(order);
+
+      newPoints.sort(order).append("circle")
+      .attr("class", "dot")
+      .attr("cx", function(d) {
+            return xScale( x(d));
+      })
+       .attr("transform", "translate(" + margin.left + "," + margin.top+ ")")
+      .attr("cy", function(d) {
+            return yScale(y(d));
+      })
+      .style("fill", function(d) { return legend_color(color(d)); })
+      .attr("r", function(d) {
+            return rScale(radius(d));
+      })
+      .style("fill-opacity", 0.1)
+      .transition()
+            .duration(750)
+            .style("fill-opacity", 0.7);
+      // .on('mouseover', tip2.show)
+      // .on('mouseout', tip2.hide);
+
+    oldPoints.transition()
+        .duration(750)
+        .style("fill-opacity", 0)
+        .remove();
+
+      svg.selectAll("circle")
+      .on('mouseover', tip2.show)
+      .on('mouseout', tip2.hide);
+
+
 
       //   legend = svg.selectAll(".legend_bubble")
       // .attr("transform","translate(50,30)")
