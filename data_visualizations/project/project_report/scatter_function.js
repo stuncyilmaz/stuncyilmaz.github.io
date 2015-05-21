@@ -83,7 +83,7 @@ legend_color.domain(races_names);
       // console.log(rScale(miny_radius ) )
 
       var xScale = d3.scale.linear()
-       .domain([d3.min(x_data)-5,d3.max(x_data)+20])
+       .domain([d3.min(x_data)-5,d3.max(x_data)])
        .range([0, w ]);
 
 
@@ -295,7 +295,7 @@ function order(a, b) {
       console.log(d3.min(r_data) )
 
       var xScale = d3.scale.linear()
-       .domain([d3.min(x_data)-5,d3.max(x_data)+20])
+       .domain([d3.min(x_data)-5,d3.max(x_data)])
        .range([0, w ]);
 
 
